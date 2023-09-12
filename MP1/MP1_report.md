@@ -1,6 +1,7 @@
 # MiniProject 1 Report
 Max Stopyra
-[Github Repo with all pertinent files](https://github.com/mstopyra/MADVLSI_FA23]
+
+[Github Repo with all pertinent files](https://github.com/mstopyra/MADVLSI_FA23)
 
 ### Inverter Schematic:
 ![Inverter Schematic](INV_mp1.svg)
