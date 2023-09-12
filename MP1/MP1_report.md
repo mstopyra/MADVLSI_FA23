@@ -11,7 +11,7 @@ Max Stopyra
 ![Test Harness Schematic](MP1_final_schem.svg)
 
 ### Transient simulation results:
-![Transient simulation results](MP1_sim.svg)
+![Transient simulation results](MP1_sim_50n.svg)
 
 ### Top-Level Cell Layout:
 ![Top-Level Cell Layout](AND2.png)
