@@ -1,0 +1,48 @@
+magic
+tech sky130A
+timestamp 1695927533
+<< nwell >>
+rect -285 655 -45 845
+rect -285 635 -5 655
+rect -45 630 -5 635
+<< poly >>
+rect -45 620 -5 630
+rect -45 605 -35 620
+rect -75 600 -35 605
+rect -15 600 -5 620
+rect -75 590 -5 600
+rect -75 450 -60 590
+rect -150 435 -60 450
+<< polycont >>
+rect -35 600 -15 620
+<< locali >>
+rect -45 620 -5 655
+rect -45 600 -35 620
+rect -15 600 -5 620
+rect -45 590 -5 600
+rect -80 455 -40 475
+<< metal1 >>
+rect -160 735 -45 815
+rect -160 185 -80 495
+rect -160 100 -45 185
+use CSR_DFF  CSR_DFF_0
+timestamp 1695926555
+transform 1 0 2200 0 1 95
+box -445 -170 155 805
+use CSR_DFF  CSR_DFF_1
+timestamp 1695926555
+transform 1 0 400 0 1 95
+box -445 -170 155 805
+use CSR_DFF  CSR_DFF_2
+timestamp 1695926555
+transform 1 0 1000 0 1 95
+box -445 -170 155 805
+use CSR_DFF  CSR_DFF_3
+timestamp 1695926555
+transform 1 0 1600 0 1 95
+box -445 -170 155 805
+use inverter  inverter_0 ~/Documents/MP1/layout
+timestamp 1694477420
+transform 1 0 -160 0 1 495
+box -125 -60 80 280
+<< end >>

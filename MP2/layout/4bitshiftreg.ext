@@ -1,0 +1,280 @@
+timestamp 1695926555
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use inverter inverter_0 1 0 -320 0 1 990
+use CSR_DFF CSR_DFF_3 1 0 3200 0 1 190
+use CSR_DFF CSR_DFF_2 1 0 2000 0 1 190
+use CSR_DFF CSR_DFF_1 1 0 800 0 1 190
+use CSR_DFF CSR_DFF_0 1 0 4400 0 1 190
+node "m1_n320_550#" 0 296.964 -320 550 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83200 1360 0 0 0 0 0 0 0 0 0 0
+node "m1_n320_1470#" 0 107.401 -320 1470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36800 780 0 0 0 0 0 0 0 0 0 0
+node "li_n160_910#" 26 42.456 -160 910 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 240 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n300_870#" 935 493.362 -300 870 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22000 1360 0 0 10400 420 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n570_1270#" 2223 616.8 -570 1270 nw 0 0 0 0 205600 1980 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_n570_1270#" "a_n300_870#" 28.0439
+cap "w_n570_1270#" "li_n160_910#" 3.18495
+cap "m1_n320_550#" "m1_n320_1470#" 17.0855
+cap "m1_n320_550#" "a_n300_870#" 22.7251
+cap "m1_n320_550#" "li_n160_910#" 12.8257
+cap "m1_n320_1470#" "a_n300_870#" 3.03643
+cap "li_n160_910#" "m1_n320_1470#" 0.455052
+cap "m1_n320_550#" "w_n570_1270#" 6.70375
+cap "li_n160_910#" "a_n300_870#" 14.0307
+cap "w_n570_1270#" "m1_n320_1470#" 54.2434
+cap "CSR_DFF_1/CLK" "CSR_DFF_1/a_n720_1260#" 0.980322
+cap "inverter_0/A" "CSR_DFF_1/a_n720_1260#" 7.2247
+cap "CSR_DFF_2/a_n720_1260#" "CSR_DFF_1/CLK" 0.0888889
+cap "inverter_0/Y" "CSR_DFF_1/a_n720_710#" 6.29287
+cap "inverter_0/VN" "inverter_0/VP" 7.94527
+cap "CSR_DFF_1/QB" "CSR_DFF_2/a_n720_n230#" 0.302531
+cap "CSR_DFF_1/a_n720_710#" "inverter_0/A" 7.94658
+cap "CSR_DFF_1/Q" "CSR_DFF_2/a_n720_n230#" 0.154815
+cap "inverter_0/VP" "CSR_DFF_1/a_n720_1260#" -0.757355
+cap "inverter_0/VN" "CSR_DFF_1/a_n210_770#" 1.51231
+cap "inverter_0/VP" "CSR_DFF_1/a_n720_710#" -0.480917
+cap "inverter_0/VN" "CSR_DFF_1/a_n720_1260#" 3.82074
+cap "CSR_DFF_1/QB" "CSR_DFF_1/CLK" 0.685675
+cap "inverter_0/Y" "CSR_DFF_1/CLK" 0.556974
+cap "CSR_DFF_1/Q" "CSR_DFF_1/QB" -2.84217e-14
+cap "CSR_DFF_1/QB" "inverter_0/A" 0.0630121
+cap "inverter_0/Y" "inverter_0/A" 65.6878
+cap "CSR_DFF_1/Q" "CSR_DFF_2/a_n720_710#" 0.852843
+cap "CSR_DFF_2/a_n720_710#" "CSR_DFF_1/CLK" 0.00718235
+cap "CSR_DFF_1/Q" "CSR_DFF_1/CLK" 0.079044
+cap "CSR_DFF_2/a_n720_710#" "inverter_0/A" 0.020878
+cap "CSR_DFF_1/Q" "inverter_0/A" 0.974695
+cap "CSR_DFF_1/CLK" "inverter_0/A" 33.2737
+cap "inverter_0/VN" "CSR_DFF_2/a_n720_1260#" 0.130044
+cap "inverter_0/VN" "CSR_DFF_1/a_n720_710#" 13.6181
+cap "inverter_0/VN" "CSR_DFF_2/a_n720_n230#" 0.399463
+cap "inverter_0/VP" "inverter_0/Y" 3.59428
+cap "inverter_0/VP" "CSR_DFF_1/CLK" -4.78578
+cap "inverter_0/VP" "inverter_0/A" 108.194
+cap "CSR_DFF_1/a_n720_n230#" "inverter_0/VN" 9.50974
+cap "inverter_0/VN" "CSR_DFF_1/QB" 7.36365
+cap "inverter_0/VN" "inverter_0/Y" 47.197
+cap "inverter_0/VN" "CSR_DFF_2/a_n720_710#" 0.329492
+cap "CSR_DFF_1/Q" "inverter_0/VN" 1.5304
+cap "inverter_0/VN" "CSR_DFF_1/CLK" 9.88993
+cap "CSR_DFF_2/QB" "CSR_DFF_1/QB" 0.448155
+cap "inverter_0/Y" "CSR_DFF_1/a_n720_1260#" 0.059895
+cap "inverter_0/A" "CSR_DFF_1/a_n210_770#" 0.0476484
+cap "inverter_0/VN" "inverter_0/A" 40.4297
+cap "inverter_0/VP" "CSR_DFF_1/QB" 16.5918
+cap "CSR_DFF_0/CLK" "CSR_DFF_2/QB" 3.83257
+cap "inverter_0/VN" "CSR_DFF_3/a_n720_710#" 0.612475
+cap "inverter_0/VN" "CSR_DFF_2/a_n720_710#" 1.27794
+cap "CSR_DFF_1/QB" "CSR_DFF_1/Q" 1.1168
+cap "inverter_0/VP" "CSR_DFF_2/a_n720_710#" 4.8538
+cap "inverter_0/A" "CSR_DFF_1/Q" 0.247423
+cap "CSR_DFF_3/a_n720_n230#" "CSR_DFF_2/Q" 0.154815
+cap "CSR_DFF_2/QB" "CSR_DFF_2/Q" 1.1168
+cap "CSR_DFF_2/a_n720_710#" "CSR_DFF_1/Q" 1.22208
+cap "CSR_DFF_2/a_n720_1260#" "inverter_0/VN" 0.12853
+cap "CSR_DFF_1/a_n720_1260#" "CSR_DFF_0/CLK" 0.980322
+cap "inverter_0/VN" "inverter_0/VP" 7.10543e-15
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_2/QB" 1.38233
+cap "CSR_DFF_2/a_n720_1260#" "inverter_0/VP" 2.05671
+cap "CSR_DFF_0/CLK" "CSR_DFF_2/Q" 0.775213
+cap "CSR_DFF_1/a_n210_770#" "CSR_DFF_0/CLK" 0.541802
+cap "inverter_0/VN" "CSR_DFF_1/Q" 0.138647
+cap "CSR_DFF_2/QB" "CSR_DFF_1/QB" 3.34706
+cap "CSR_DFF_2/a_n720_n230#" "CSR_DFF_1/QB" 5.17621
+cap "CSR_DFF_2/a_n720_1260#" "CSR_DFF_1/Q" 0.449302
+cap "inverter_0/VP" "CSR_DFF_1/Q" 6.45461
+cap "CSR_DFF_0/CLK" "CSR_DFF_3/a_n720_1260#" 0.0888889
+cap "CSR_DFF_0/CLK" "CSR_DFF_1/QB" 10.4079
+cap "CSR_DFF_2/QB" "CSR_DFF_3/a_n720_710#" 8.45095
+cap "CSR_DFF_2/QB" "CSR_DFF_0/DB" 0.448155
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_2/Q" 0.222222
+cap "CSR_DFF_0/CLK" "CSR_DFF_3/a_n720_710#" 0.00718235
+cap "inverter_0/VN" "CSR_DFF_3/a_n720_n230#" 11.6412
+cap "inverter_0/VN" "CSR_DFF_2/a_n720_n230#" 19.2615
+cap "inverter_0/VN" "CSR_DFF_2/QB" 5.98858
+cap "CSR_DFF_1/QB" "CSR_DFF_2/Q" 0.0832712
+cap "inverter_0/VP" "CSR_DFF_2/QB" 11.5915
+cap "CSR_DFF_0/D" "CSR_DFF_2/Q" 0.499422
+cap "inverter_0/VN" "CSR_DFF_0/CLK" 2.81346
+cap "CSR_DFF_2/a_n720_1260#" "CSR_DFF_0/CLK" 1.06921
+cap "CSR_DFF_3/a_n720_710#" "CSR_DFF_2/Q" 1.21483
+cap "inverter_0/VP" "CSR_DFF_0/CLK" 16.5978
+cap "CSR_DFF_0/CLK" "CSR_DFF_1/Q" 1.45506
+cap "inverter_0/VN" "CSR_DFF_2/Q" 0.454442
+cap "CSR_DFF_1/QB" "CSR_DFF_2/a_n720_710#" 30.6411
+cap "inverter_0/VP" "CSR_DFF_1/a_n210_770#" -5.55112e-17
+cap "inverter_0/VP" "CSR_DFF_2/Q" 6.72638
+cap "CSR_DFF_1/a_n720_710#" "CSR_DFF_0/CLK" 0.0636701
+cap "CSR_DFF_3/a_n720_n230#" "CSR_DFF_2/QB" 0.302531
+cap "inverter_0/VN" "CSR_DFF_1/QB" 31.6505
+cap "CSR_DFF_2/a_n720_1260#" "CSR_DFF_1/QB" 6.24192
+cap "CSR_DFF_2/Q" "CSR_DFF_1/Q" 0.998845
+cap "CSR_DFF_0/a_n720_710#" "CSR_DFF_0/CLK" 0.00718235
+cap "CSR_DFF_2/Q" "CSR_DFF_0/D" 0.499422
+cap "CSR_DFF_0/VDD" "CSR_DFF_0/CLK" 16.5978
+cap "CSR_DFF_0/VDD" "CSR_DFF_2/QB" 5.00033
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_0/VDD" 2.05671
+cap "CSR_DFF_3/a_n720_710#" "CSR_DFF_0/VDD" 4.8538
+cap "CSR_DFF_0/GND" "CSR_DFF_0/a_n720_n230#" 11.6412
+cap "CSR_DFF_0/DB" "CSR_DFF_0/D" 1.1168
+cap "CSR_DFF_0/a_n720_1260#" "CSR_DFF_0/CLK" 0.0888889
+cap "CSR_DFF_2/a_n720_710#" "CSR_DFF_0/CLK" 0.0636701
+cap "CSR_DFF_2/a_n720_1260#" "CSR_DFF_0/CLK" 0.980322
+cap "CSR_DFF_0/a_n720_710#" "CSR_DFF_0/D" 1.21483
+cap "CSR_DFF_0/VDD" "CSR_DFF_0/D" 6.72638
+cap "CSR_DFF_0/GND" "CSR_DFF_0/CLK" 1.4964
+cap "CSR_DFF_0/GND" "CSR_DFF_2/QB" 31.6505
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_0/GND" 0.12853
+cap "CSR_DFF_0/a_n720_710#" "CSR_DFF_0/DB" 15.5086
+cap "CSR_DFF_0/VDD" "CSR_DFF_0/DB" 16.5918
+cap "CSR_DFF_3/a_n720_710#" "CSR_DFF_0/GND" 0.66546
+cap "CSR_DFF_3/a_n720_n230#" "CSR_DFF_0/GND" 7.62038
+cap "CSR_DFF_0/a_n720_1260#" "CSR_DFF_0/D" 0.222222
+cap "CSR_DFF_0/GND" "CSR_DFF_2/Q" 0.138647
+cap "CSR_DFF_0/DB" "CSR_DFF_0/QB" 1.97954
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_0/CLK" 1.06921
+cap "CSR_DFF_2/QB" "CSR_DFF_0/CLK" 7.261
+cap "CSR_DFF_0/a_n720_1260#" "CSR_DFF_0/DB" 3.09422
+cap "CSR_DFF_0/GND" "CSR_DFF_0/D" 0.593089
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_2/QB" 4.85959
+cap "CSR_DFF_3/a_n720_710#" "CSR_DFF_2/QB" 22.1902
+cap "CSR_DFF_0/Q" "CSR_DFF_0/D" 0.499422
+cap "CSR_DFF_2/a_n210_770#" "CSR_DFF_0/CLK" 0.541802
+cap "CSR_DFF_0/a_n720_n230#" "CSR_DFF_0/D" 0.154815
+cap "CSR_DFF_0/GND" "CSR_DFF_0/DB" 37.6391
+cap "CSR_DFF_3/a_n720_n230#" "CSR_DFF_2/QB" 5.17621
+cap "CSR_DFF_2/Q" "CSR_DFF_0/CLK" 0.758887
+cap "CSR_DFF_0/a_n720_n230#" "CSR_DFF_0/DB" 4.45357
+cap "CSR_DFF_0/GND" "CSR_DFF_0/a_n720_710#" 0.612475
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_2/Q" 0.22708
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/D" 0.775213
+cap "CSR_DFF_3/a_n720_710#" "CSR_DFF_2/Q" 0.860084
+cap "CSR_DFF_2/QB" "CSR_DFF_0/D" 0.0832712
+cap "CSR_DFF_0/DB" "CSR_DFF_0/CLK" 5.8427
+cap "CSR_DFF_2/QB" "CSR_DFF_0/DB" 3.34706
+cap "CSR_DFF_0/D" "CSR_DFF_0/a_n720_710#" 0.860084
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/GND" 0.179339
+cap "CSR_DFF_0/DB" "CSR_DFF_0/Q" 0.0832712
+cap "CSR_DFF_3/a_n210_770#" "CSR_DFF_0/CLK" 0.541802
+cap "CSR_DFF_0/D" "CSR_DFF_0/GND" 3.46945e-18
+cap "CSR_DFF_0/DB" "CSR_DFF_0/QB" 1.81568
+cap "CSR_DFF_0/DB" "CSR_DFF_0/a_n720_710#" 15.1326
+cap "CSR_DFF_0/DB" "CSR_DFF_0/a_n720_n230#" 1.02517
+cap "CSR_DFF_0/a_n720_1260#" "CSR_DFF_0/GND" 0.12853
+cap "CSR_DFF_0/VDD" "CSR_DFF_0/CLK" 16.0589
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/D" 0.758887
+cap "CSR_DFF_0/VDD" "CSR_DFF_0/a_n720_1260#" 1.75046
+cap "CSR_DFF_0/GND" "CSR_DFF_0/QB" 0.105495
+cap "CSR_DFF_0/a_n720_710#" "CSR_DFF_0/GND" 0.66546
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/a_n720_1260#" 0.0888889
+cap "CSR_DFF_0/a_n720_n230#" "CSR_DFF_0/GND" 7.62038
+cap "CSR_DFF_0/DB" "CSR_DFF_0/CLK" 5.25087
+cap "CSR_DFF_0/D" "CSR_DFF_0/a_n720_1260#" 0.22708
+cap "CSR_DFF_0/VDD" "CSR_DFF_0/Q" 0.271772
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_0/CLK" 0.980322
+cap "CSR_DFF_0/CLK" "CSR_DFF_3/a_n720_710#" 0.0636701
+cap "CSR_DFF_0/VDD" "CSR_DFF_0/a_n720_710#" 4.8538
+cap "CSR_DFF_0/D" "CSR_DFF_0/Q" 0.499422
+cap "CSR_DFF_0/DB" "CSR_DFF_0/a_n720_1260#" 3.1477
+cap "inverter_0/VP" "CSR_DFF_1/a_n210_770#" 5.76104
+cap "inverter_0/A" "CSR_DFF_1/a_n210_770#" 0.0509174
+cap "inverter_0/VP" "inverter_0/A" 75.9328
+cap "inverter_0/VP" "inverter_0/Y" 24.2391
+cap "inverter_0/VN" "inverter_0/VP" -6.55949
+cap "inverter_0/A" "inverter_0/Y" 36.5249
+cap "inverter_0/VP" "CSR_DFF_1/QB" 0.234064
+cap "CSR_DFF_2/a_n720_1260#" "CSR_DFF_1/a_n210_770#" 0.0562574
+cap "CSR_DFF_1/CLK" "CSR_DFF_1/a_n210_770#" 0.0595348
+cap "inverter_0/VP" "CSR_DFF_2/a_n720_1260#" 0.0590755
+cap "CSR_DFF_2/a_n720_710#" "CSR_DFF_1/a_n210_770#" 0.040271
+cap "inverter_0/VP" "CSR_DFF_1/CLK" 19.2127
+cap "inverter_0/VP" "CSR_DFF_2/a_n720_710#" 0.0399018
+cap "CSR_DFF_1/a_n210_770#" "CSR_DFF_1/Q" 0.0846659
+cap "inverter_0/VP" "CSR_DFF_1/Q" 0.362379
+cap "inverter_0/A" "CSR_DFF_2/a_n720_1260#" 0.000997742
+cap "CSR_DFF_1/CLK" "inverter_0/A" 8.45212
+cap "CSR_DFF_1/CLK" "inverter_0/Y" 1.11282
+cap "inverter_0/A" "CSR_DFF_1/Q" 0.0233311
+cap "inverter_0/VP" "CSR_DFF_1/a_n720_710#" 1.25716
+cap "inverter_0/VP" "CSR_DFF_1/a_n720_1260#" -0.209196
+cap "CSR_DFF_1/a_n720_1260#" "inverter_0/A" 9.68623
+cap "CSR_DFF_1/a_n210_770#" "inverter_0/VP" 1.44057
+cap "CSR_DFF_2/QB" "CSR_DFF_0/CLK" 1.8313
+cap "CSR_DFF_1/QB" "CSR_DFF_1/Q" 0.243766
+cap "CSR_DFF_1/QB" "inverter_0/VP" 4.29047
+cap "CSR_DFF_2/Q" "CSR_DFF_2/a_n210_770#" 0.0846659
+cap "CSR_DFF_2/Q" "inverter_0/VP" 9.3135
+cap "CSR_DFF_2/Q" "CSR_DFF_2/QB" 0.243766
+cap "CSR_DFF_1/QB" "CSR_DFF_2/a_n720_1260#" 3.72484
+cap "CSR_DFF_1/QB" "CSR_DFF_0/CLK" 3.39228
+cap "CSR_DFF_2/a_n210_770#" "inverter_0/VP" 5.2009
+cap "CSR_DFF_2/Q" "CSR_DFF_0/CLK" 2.08696
+cap "CSR_DFF_3/a_n720_710#" "CSR_DFF_2/a_n210_770#" 0.040271
+cap "CSR_DFF_1/Q" "inverter_0/VP" 50.7061
+cap "CSR_DFF_2/a_n210_770#" "CSR_DFF_3/a_n720_1260#" 0.0562574
+cap "CSR_DFF_2/QB" "inverter_0/VP" 4.26146
+cap "CSR_DFF_2/a_n720_1260#" "CSR_DFF_1/Q" 0.464881
+cap "CSR_DFF_2/a_n210_770#" "CSR_DFF_0/CLK" 0.0595348
+cap "CSR_DFF_2/a_n720_1260#" "inverter_0/VP" 1.62847
+cap "CSR_DFF_2/QB" "CSR_DFF_3/a_n720_1260#" 1.86242
+cap "CSR_DFF_1/Q" "CSR_DFF_0/CLK" 13.4312
+cap "CSR_DFF_2/a_n720_710#" "inverter_0/VP" -5.68434e-14
+cap "CSR_DFF_0/CLK" "inverter_0/VP" 9.5308
+cap "inverter_0/VN" "inverter_0/VP" 3.55271e-15
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_2/Q" 0.464881
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/VDD" 9.5308
+cap "CSR_DFF_3/a_n720_1260#" "CSR_DFF_0/VDD" 1.62847
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/D" 6.32225
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/DB" 1.8313
+cap "CSR_DFF_0/DB" "CSR_DFF_0/a_n720_1260#" 1.86242
+cap "CSR_DFF_0/VDD" "CSR_DFF_2/a_n210_770#" 1.44057
+cap "CSR_DFF_3/a_n210_770#" "CSR_DFF_0/VDD" 5.2009
+cap "CSR_DFF_2/QB" "CSR_DFF_0/VDD" 0.0290076
+cap "CSR_DFF_3/a_n210_770#" "CSR_DFF_0/D" 0.0846659
+cap "CSR_DFF_0/VDD" "CSR_DFF_2/Q" 41.3926
+cap "CSR_DFF_3/a_n210_770#" "CSR_DFF_0/a_n720_710#" 0.040271
+cap "CSR_DFF_0/VDD" "CSR_DFF_0/D" 50.6662
+cap "CSR_DFF_0/CLK" "CSR_DFF_3/a_n210_770#" 0.0595348
+cap "CSR_DFF_0/DB" "CSR_DFF_0/VDD" 4.26146
+cap "CSR_DFF_3/a_n210_770#" "CSR_DFF_0/a_n720_1260#" 0.0562574
+cap "CSR_DFF_0/CLK" "CSR_DFF_2/QB" 1.56098
+cap "CSR_DFF_0/CLK" "CSR_DFF_2/Q" 11.3442
+cap "CSR_DFF_2/QB" "CSR_DFF_3/a_n720_1260#" 1.86242
+cap "CSR_DFF_0/DB" "CSR_DFF_0/D" 0.243766
+cap "CSR_DFF_3/a_n210_770#" "CSR_DFF_0/VDD" 1.44057
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/VDD" 9.00886
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/DB" 1.56098
+cap "CSR_DFF_0/CLK" "CSR_DFF_0/D" 7.10891
+cap "CSR_DFF_0/a_n720_1260#" "CSR_DFF_0/VDD" 1.62847
+cap "CSR_DFF_0/a_n720_1260#" "CSR_DFF_0/DB" 1.86242
+cap "CSR_DFF_0/a_n720_1260#" "CSR_DFF_0/D" 0.464881
+cap "CSR_DFF_0/VDD" "CSR_DFF_0/DB" 0.0290076
+cap "CSR_DFF_0/D" "CSR_DFF_0/VDD" 0.0398911
+merge "CSR_DFF_0/VDD" "CSR_DFF_1/VDD" -776.74 0 0 0 0 -118800 -8040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4800 -1780 0 0 0 0 0 0 0 0 0 0
+merge "CSR_DFF_1/VDD" "CSR_DFF_2/VDD"
+merge "CSR_DFF_2/VDD" "CSR_DFF_3/VDD"
+merge "CSR_DFF_3/VDD" "inverter_0/VP"
+merge "inverter_0/VP" "m1_n320_1470#"
+merge "m1_n320_1470#" "w_n570_1270#"
+merge "CSR_DFF_0/CLK" "CSR_DFF_1/CLK" -355.252 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -540 0 0 0 0 0 0 0 0 0 0
+merge "CSR_DFF_1/CLK" "CSR_DFF_2/CLK"
+merge "CSR_DFF_2/CLK" "CSR_DFF_3/CLK"
+merge "CSR_DFF_0/GND" "CSR_DFF_1/GND" -951.353 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2600 0 0 0 0 0 0 0 0 0 0
+merge "CSR_DFF_1/GND" "CSR_DFF_2/GND"
+merge "CSR_DFF_2/GND" "CSR_DFF_3/GND"
+merge "CSR_DFF_3/GND" "inverter_0/VN"
+merge "inverter_0/VN" "VSUBS"
+merge "VSUBS" "m1_n320_550#"
+merge "CSR_DFF_1/D" "inverter_0/A" -332.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/A" "a_n300_870#"
+merge "CSR_DFF_0/D" "CSR_DFF_3/Q" -152.473 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSR_DFF_0/DB" "CSR_DFF_3/QB" -159.869 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSR_DFF_1/QB" "CSR_DFF_2/DB" -155.802 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSR_DFF_1/DB" "inverter_0/Y" -157.071 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -180 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/Y" "li_n160_910#"
+merge "CSR_DFF_2/Q" "CSR_DFF_3/D" -152.473 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSR_DFF_2/QB" "CSR_DFF_3/DB" -159.869 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CSR_DFF_1/Q" "CSR_DFF_2/D" -152.431 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 0 0 0 0 0 0 0 0 0 0 0 0

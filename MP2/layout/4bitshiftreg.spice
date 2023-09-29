@@ -1,0 +1,38 @@
+* NGSPICE file created from 4bitshiftreg.ext - technology: sky130A
+
+.subckt CSR_DFF DB D QB CLK Q VDD GND
+X0 GND Q QB GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X1 a_n720_710# a_n720_1260# a_n720_n230# GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X2 QB Q a_n210_770# VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X3 QB CLK a_n720_710# GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X4 a_n720_n230# CLK GND GND sky130_fd_pr__nfet_01v8 ad=2 pd=9 as=2 ps=9 w=4 l=0.15
+X5 Q QB a_n210_770# VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=1.3 ps=5.1 w=1 l=0.15
+X6 a_n720_1260# CLK D VDD sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X7 a_n210_770# CLK VDD VDD sky130_fd_pr__pfet_01v8 ad=1.3 pd=5.1 as=2 ps=9 w=4 l=0.15
+X8 GND QB Q GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X9 a_n720_1260# a_n720_710# a_n720_n230# GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X10 VDD a_n720_710# a_n720_1260# VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X11 a_n720_710# CLK DB VDD sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X12 VDD a_n720_1260# a_n720_710# VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X13 Q CLK a_n720_1260# GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+.ends
+
+.subckt inverter A Y VP VN
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+.ends
+
+
+* Top level circuit 4bitshiftreg
+
+XCSR_DFF_3 CSR_DFF_3/DB CSR_DFF_3/D CSR_DFF_3/QB CSR_DFF_3/CLK CSR_DFF_3/Q inverter_0/VP
++ VSUBS CSR_DFF
+Xinverter_0 CSR_DFF_1/D inverter_0/Y inverter_0/VP VSUBS inverter
+XCSR_DFF_0 CSR_DFF_3/QB CSR_DFF_3/Q CSR_DFF_0/QB CSR_DFF_3/CLK CSR_DFF_0/Q inverter_0/VP
++ VSUBS CSR_DFF
+XCSR_DFF_1 inverter_0/Y CSR_DFF_1/D CSR_DFF_2/DB CSR_DFF_3/CLK CSR_DFF_2/D inverter_0/VP
++ VSUBS CSR_DFF
+XCSR_DFF_2 CSR_DFF_2/DB CSR_DFF_2/D CSR_DFF_3/DB CSR_DFF_3/CLK CSR_DFF_3/D inverter_0/VP
++ VSUBS CSR_DFF
+.end
+
