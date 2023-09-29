@@ -12,7 +12,8 @@ Max Stopyra
 ### Transient simulation results:
 ![Transient simulation results](4bitShiftRegTranSim.svg)
 
-### Top-Level Cell Layout of 4-bit Shift Register: 26.4 x 9.75 micron cell
+### Top-Level Cell Layout of 4-bit Shift Register: 
+26.4 x 9.75 micron cell
 ![Top-Level Cell Layout](4bitshiftregss1.png)
 
 ### D-flip-flop Cell Layout:
