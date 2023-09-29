@@ -1,7 +1,7 @@
 # MiniProject 2 Report
 Max Stopyra
 
-[Github Repo with all pertinent files](https://github.com/mstopyra/MADVLSI_FA23/MP2)
+[Github Repo with all pertinent files]([https://github.com/mstopyra/MADVLSI_FA23/MP2](https://github.com/mstopyra/MADVLSI_FA23/tree/main/MP2))
 
 ### Transistor-Level Edge Sensitive D-flip-flop Schematic:
 ![DFF schema](DFF.svg)
