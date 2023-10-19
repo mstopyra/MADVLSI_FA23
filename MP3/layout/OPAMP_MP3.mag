@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1697576398
+timestamp 1697753258
 << nwell >>
 rect -840 7060 -460 7110
 rect -345 7065 1410 7110
@@ -59,11 +59,11 @@ rect 1395 3360 1410 3365
 rect 1360 3250 1410 3290
 rect 1355 2750 1410 3250
 use biasgen  biasgen_0
-timestamp 1697397656
+timestamp 1697752574
 transform 1 0 2320 0 1 5790
 box -2470 -5540 -910 1300
 use FCDA  FCDA_0
-timestamp 1697576398
+timestamp 1697751355
 transform 1 0 -125 0 1 3345
 box -1760 -730 -220 3765
 << end >>

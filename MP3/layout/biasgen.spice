@@ -1,6 +1,8 @@
-* NGSPICE file created from OPAMP_MP3.ext - technology: sky130A
+* NGSPICE file created from biasgen.ext - technology: sky130A
 
-.subckt biasgen VBP VBN VCP VCN VDD GND
+
+* Top level circuit biasgen
+
 X0 a_n4050_n2940# VBN a_n4200_n2940# GND sky130_fd_pr__nfet_01v8 ad=1.5 pd=12.2 as=1.5 ps=12.2 w=12 l=0.5
 X1 VBP VBN GND GND sky130_fd_pr__nfet_01v8 ad=3.3 pd=12.6 as=3.3 ps=12.6 w=12 l=0.5
 X2 a_n3090_n2940# VBN a_n3240_n2940# GND sky130_fd_pr__nfet_01v8 ad=1.5 pd=12.2 as=1.5 ps=12.2 w=12 l=0.5
@@ -55,43 +57,5 @@ X50 a_n4450_n310# a_n4450_n310# a_n4560_n180# VDD sky130_fd_pr__pfet_01v8 ad=3.3
 X51 a_n4560_n180# a_n4450_n310# a_n4450_n310# VDD sky130_fd_pr__pfet_01v8 ad=3.3 pd=12.6 as=3.3 ps=12.6 w=12 l=0.5
 X52 a_n3250_n7990# VBP a_n3400_n7990# VDD sky130_fd_pr__pfet_01v8 ad=1.5 pd=12.2 as=1.5 ps=12.2 w=12 l=0.5
 X53 a_n4460_n10780# a_n4460_n10780# a_n4570_n10750# GND sky130_fd_pr__nfet_01v8 ad=3.3 pd=12.6 as=3.3 ps=12.6 w=12 l=0.5
-.ends
-
-.subckt FCDA VBP VBN VCP VCN VDD GND
-X0 a_n1660_1840# VBN GND GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
-X1 a_n2230_4820# VBP VDD VDD sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X2 VOUT VCN a_n2230_n1140# GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X3 a_n2970_1840# VCP a_n2830_n1140# VDD sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X4 GND GND a_n1730_n1270# GND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
-X5 a_n1730_n1270# VCP a_n1430_4820# VDD sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X6 VDD VBP a_n1860_1840# VDD sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X7 a_n2970_1840# GND GND GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
-X8 a_n2770_1840# V1 a_n2970_1840# GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X9 a_n2830_n1140# GND GND GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
-X10 a_n1830_n1140# VCN VOUT GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X11 a_n2630_n1140# VCN a_n2830_n1140# GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X12 VOUT VCP a_n2230_4820# VDD sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X13 a_n1430_4820# V1 a_n1660_1840# GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X14 GND a_n1730_n1270# a_n1830_n1140# GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X15 VDD VBP a_n2970_1840# VDD sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X16 a_n2830_n1140# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
-X17 VDD VDD a_n1730_n1270# VDD sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
-X18 a_n1430_4820# VBP VDD VDD sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X19 a_n1860_1840# VCP VOUT VDD sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X20 GND a_n2830_n1140# a_n2630_n1140# GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X21 a_n1430_n1140# a_n1730_n1270# GND GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X22 GND VBN a_n2770_1840# GND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
-X23 a_n2230_n1140# a_n2830_n1140# GND GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X24 a_n2230_4820# V2 a_n2770_1840# GND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=6 ps=25 w=12 l=0.5
-X25 a_n1730_n1270# VCN a_n1430_n1140# GND sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
-X26 a_n1660_1840# V2 a_n1860_1840# GND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=6 ps=25 w=12 l=0.5
-X27 GND GND a_n1430_4820# GND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
-.ends
-
-
-* Top level circuit OPAMP_MP3
-
-Xbiasgen_0 FCDA_0/VBP FCDA_0/VBN FCDA_0/VCP FCDA_0/VCN FCDA_0/VDD VSUBS biasgen
-XFCDA_0 FCDA_0/VBP FCDA_0/VBN FCDA_0/VCP FCDA_0/VCN FCDA_0/VDD VSUBS FCDA
 .end
 
