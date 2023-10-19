@@ -20,7 +20,7 @@ We can determine the inverting input by analyzing the circuit using KCL at I2 wh
 
 #### Common-mode Input Voltage Range of Figure 1:
 
-Under the assumption that we are analyzing the circuit when the current above Mb is equal to the current below Mb we can compress M1 and M2 together into Mcm, and analyze the circuit comprised of Mb and Mcm as a source-follower. Using the EKV model, the knowlege that Mb must always be in saturation, and the fact that when Vcm=Vdd the circuit breaks, we can determine the following:
+Under the assumption that we are analyzing the circuit when the current above Mb is equal to the current below Mb, we can compress M1 and M2 together into Mcm and analyze the circuit comprised of Mb and Mcm as a source-follower. Using the EKV model, the knowlege that Mb must always be in saturation, and the fact that when Vcm=Vdd the circuit breaks, we can determine the following:
 
 ![EKV analysis](Media/VCMMATH.jpeg)
 
