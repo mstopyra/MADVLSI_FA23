@@ -66,6 +66,41 @@ From our graph, we can also determine that the output current limits itself to |
 Looking at the simulation results, we can see that the unity gain crossover frequency is around 915 kHz, and that our low frequency gain is 62.47 dB, which is very close to the value we obtained in our VTC, 61.25 dB, and the value we got from measuring our incremental transconductance gain (61.25 dB). 
 
 ### Top-level layout: 
-![Top level layout](Media/)
+![Top level layout](Media/TOPLEVELNEW.jpg)
+
+### Bias Circuit layout: 
+![Biasgen layout](Media/BIASGENNEW.jpg)
+
+### FCDA layout: 
+![FCDA layout](Media/FCDANEW.jpg)
 
 ### LVS Output:
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell biasgen in circuit OPAMP_MP3.spice (0)(1 instance)
+Flattening unmatched subcell FCDA in circuit OPAMP_MP3.spice (0)(1 instance)
+
+Class OPAMP_MP3.spice (0):  Merged 21 parallel devices.
+Class LVS_Circuit.spice (1):  Merged 21 parallel devices.
+Subcircuit summary:
+Circuit 1: OPAMP_MP3.spice                 |Circuit 2: LVS_Circuit.spice               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (46->35)           |sky130_fd_pr__nfet_01v8 (46->35)           
+sky130_fd_pr__pfet_01v8 (36->26)           |sky130_fd_pr__pfet_01v8 (36->26)           
+Number of devices: 61                      |Number of devices: 61                      
+Number of nets: 41                         |Number of nets: 41                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 38 symmetries.
+Cells have no pins;  pin matching not needed.
+Device classes OPAMP_MP3.spice and LVS_Circuit.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
